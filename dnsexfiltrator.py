@@ -129,7 +129,7 @@ if __name__ == '__main__':
 	parser.add_argument("-p", "--password", help="The password used to encrypt/decrypt exfiltrated data", dest="password", required=True)
 	parser.add_argument("-f", "--filedata", help="The exfiltrated data as stdin input", dest="inputFile", required=False)
 	parser.add_argument("-o", "--outputfile", help="The output file name.", dest="outputFile", required=False)
-	parser.add_argument("-b", "--useBase32", help="pass if base32 was used", dest="useBase32", required=False)
+	parser.add_argument("-b32", "--useBase32", help="pass if base32 was used", dest="useBase32", required=False)
 	args = parser.parse_args() 
 
 	useBase32 = False;

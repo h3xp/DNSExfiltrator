@@ -49,6 +49,10 @@ Start the `dnsexfiltrator.py` script passing it the domain name and decryption p
 ```
 root@kali:~# ./dnsexfiltrator.py -d mydomain.com -p password
 ```
+h3xp - [@h3xp](http://twitter.com/hexp_) added offline usage for decrypting chunks:
+```
+./dnsexfiltrator.py -d mydomain.com -p password -f this_is_the_encrypted_chunk -o output_filename
+```
 
 ***CLIENT SIDE***
 
