@@ -51,7 +51,12 @@ root@kali:~# ./dnsexfiltrator.py -d mydomain.com -p password
 ```
 h3xp - [@h3xp](http://twitter.com/hexp_) added offline usage for decrypting chunks:
 ```
-./dnsexfiltrator.py -d mydomain.com -p password -f this_is_the_encrypted_chunk -o output_filename
+./dnsexfiltrator.py -d mydomain.com -p password -f this_is_the_encrypted_chunk -o output_filename [-b32]
+      -d domainname [MANDATORY]
+      -p password [MANDATORY]
+      -f encrypted string as stdin [MANDATORY] for offline use, if not passed the listening server would start
+      -o outputfile name [MANDATORY]
+      -b32 use base32 [OPTIONAL]
 ```
 
 ***CLIENT SIDE***
