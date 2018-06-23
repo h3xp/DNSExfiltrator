@@ -1,4 +1,4 @@
-DNSExfiltrator
+DNSExfiltrator (offline support)
 ============
 
 Author: Arno0x0x - [@Arno0x0x](http://twitter.com/Arno0x0x)
