@@ -1,6 +1,16 @@
 DNSExfiltrator (offline support)
 ============
 
+h3xp - [@h3xp](http://twitter.com/hexp_) added offline usage for decrypting chunks:
+```
+./dnsexfiltrator.py -d mydomain.com -p password -f this_is_the_encrypted_chunk -o output_filename [-b32]
+      -d domainname [MANDATORY]
+      -p password [MANDATORY]
+      -f encrypted string as stdin [MANDATORY] for offline use, if not passed the listening server would start
+      -o outputfile name [MANDATORY]
+      -b32 use base32 [OPTIONAL]
+```
+
 Author: Arno0x0x - [@Arno0x0x](http://twitter.com/Arno0x0x)
 
 DNSExfiltrator allows for transfering (*exfiltrate*) a file over a DNS request covert channel. This is basically a data leak testing tool allowing to exfiltrate data over a covert channel.
@@ -48,15 +58,6 @@ Usage
 Start the `dnsexfiltrator.py` script passing it the domain name and decryption password to be used:
 ```
 root@kali:~# ./dnsexfiltrator.py -d mydomain.com -p password
-```
-h3xp - [@h3xp](http://twitter.com/hexp_) added offline usage for decrypting chunks:
-```
-./dnsexfiltrator.py -d mydomain.com -p password -f this_is_the_encrypted_chunk -o output_filename [-b32]
-      -d domainname [MANDATORY]
-      -p password [MANDATORY]
-      -f encrypted string as stdin [MANDATORY] for offline use, if not passed the listening server would start
-      -o outputfile name [MANDATORY]
-      -b32 use base32 [OPTIONAL]
 ```
 
 ***CLIENT SIDE***
